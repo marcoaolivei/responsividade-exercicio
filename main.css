@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+header {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+
+header h1 {
+    font-style: italic;
+    font-weight: bold;
+}
+
+form a {
+    margin-right: 20px;
+}
+
+.sobre-loja {
+    display: flex;
+}
+
+.sobre-loja img {
+    margin-top: 36px;
+    margin-bottom: 22px;
+    margin-right: 20px; /* Espaçamento entre a imagem e os textos */
+}
+
+.sobre-loja .text-container {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+}
+
+.sobre-loja h2 {
+    border-bottom: 3px solid #ccc;
+    font-style: italic;  
+}
+
+.sobre-loja h3 {
+    margin-top: 44px;
+}
+
+section > h2 {
+    margin-top: 36px;
+    border-bottom: 3px solid #ccc;
+
+}
+
+.ofertas {
+    margin-top: 36px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.ofertas .carro {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens dentro do artigo */
+    text-align: left;
+}
+
+.ofertas .carro img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.carro button {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .sobre-loja {
+        display: block;
+    }
+    
+    .sobre-loja img {
+        width: 100%;
+        margin-top: 36px;
+        margin-bottom: 22px;
+        margin-right: 0;
+    }
+    
+    .sobre-loja .text-container {
+        margin-top: 36px;
+        display: flex;
+        flex-direction: column; /* Alinha os elementos verticalmente */
+    }
+    
+    .sobre-loja h2 {
+        border-bottom: 3px solid #ccc;
+        font-style: italic;  
+    }
+    
+    .sobre-loja h3 {
+        margin-top: 44px;
+    }
+
+    .compras {
+        display: block;
+    }
+
+    .ofertas {
+        margin-top: 36px;
+        display: block;
+    }
+    
+    .ofertas .carro {
+        display: block;
+        flex-direction: column;
+        align-items: center; /* Centraliza os itens dentro do artigo */
+        text-align: left;
+    }
+    
+    .ofertas .carro img {
+        width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+        height: auto; /* Mantém a proporção da imagem */
+        margin-top: 16px;
+    }
+
+    .carro button {
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+} 
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 85%;
+    }
+
+    .sobre-loja {
+        display: block;
+    }
+    
+    .sobre-loja img {
+        width: 100%;
+        margin-top: 36px;
+        margin-bottom: 22px;
+        margin-right: 0;
+    }
+    
+    .sobre-loja h2 {
+        border-bottom: 3px solid #ccc;
+        font-style: italic;  
+    }
+    
+    .sobre-loja h3 {
+        margin-top: 24px;
+    }
+
+    .ofertas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1%;
+        row-gap: 5%;
+    }
+    
+    .ofertas .carro {
+        text-align: center;
+    }
+    
+    .ofertas .carro img {
+        max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+        height: auto; /* Mantém a proporção da imagem */
+        margin-top: 16px;
+    }
+
+    .ofertas .carro  button {
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
