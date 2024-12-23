@@ -38,6 +38,7 @@ form a {
 }
 
 .sobre-loja img {
+    width: 40%;
     margin-top: 36px;
     margin-bottom: 22px;
     margin-right: 20px; /* Espaçamento entre a imagem e os textos */
